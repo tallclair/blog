@@ -1,0 +1,7 @@
+name = "custom-pixyll"
+description = "A fork of Dmitriy Slupytskyi's pixell"
+author = "Tim Allclair"
+license = "MIT"
+source_repo = "https://github.com/azmelanar/hugo-theme-pixyll"
+tags = ["blog", "personal"]
+min_version = 0.14

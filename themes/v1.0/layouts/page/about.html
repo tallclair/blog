@@ -1,0 +1,22 @@
+{{ partial "head.html" . }}
+<div class="site-wrap">
+    <div class="post p2 p-responsive wrap" role="main">
+        <div class="measure">
+            <div class="post-header mb2">
+                <div class="avatar-container">
+                    <div class="avatar-border">
+                        <img class="avatar-img" src="{{ "/img/avatar.jpg" | absURL }}">
+                    </div>
+                </div>
+                <div class="avatar-padding"></div>
+                <h1 class="center">{{ .Title }}</h1>
+                <hr class="small">
+            </div>
+
+            <article class="post-content">
+                {{ .Content }}
+            </article>
+        </div>
+    </div>
+</div>
+{{ partial "footer.html" . }}

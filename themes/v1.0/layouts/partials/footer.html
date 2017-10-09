@@ -1,0 +1,18 @@
+<footer class="footer">
+    <div class="p2 wrap">
+        <div class="measure mt1 center">
+            <div class="social-icons icons">
+                {{ partial "social_links.html" . }}
+            </div>
+            <small>
+                Copyright&nbsp;{{ .Site.LastChange.Format "2006" }}&nbsp;{{ .Site.Params.author }}
+            </small>
+        </div>
+    </div>
+</footer>
+
+<!-- Google Analytics -->
+{{ partial "google_analytics.html" . }}
+
+</body>
+</html>

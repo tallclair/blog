@@ -1,0 +1,13 @@
+baseURL = ""
+languageCode = "en-us"
+title = "Tim Allclair's Blog"
+#theme = "custom-pixyll"
+publishdir = "public"
+contentdir = "content"
+canonifyurls = true
+baseUrl = ""
+
+[params]
+#  google_analytics_id = "XX-XXXXXXXX-X"
+  twitter_username = "tallclair"
+  author = "Tim Allclair"
