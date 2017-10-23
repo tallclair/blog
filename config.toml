@@ -1,11 +1,10 @@
-baseURL = ""
+baseURL = "http://tallclair.netlify.com/" # FIXME
 languageCode = "en-us"
 title = "Tim Allclair's Blog"
-#theme = "custom-pixyll"
+theme = "v1.0"
 publishdir = "public"
 contentdir = "content"
 canonifyurls = true
-baseUrl = ""
 
 [params]
 #  google_analytics_id = "XX-XXXXXXXX-X"
