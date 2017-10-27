@@ -25,10 +25,6 @@ img {
     display: block;
 }
 
-.footer, .site-wrap:after {
-    height: 120px;
-}
-
 body {
     font-size: 1.5rem;
 

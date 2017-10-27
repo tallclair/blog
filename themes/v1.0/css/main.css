@@ -49,6 +49,11 @@ hr.small {
     height: 100px;
 }
 
+h1.notfound {
+    font-size: 6rem;
+    margin: 1em 0;
+}
+
 @media screen and (min-width: 48em) {
     .avatar-border {
         width: 200px;
