@@ -7,6 +7,5 @@ contentdir = "content"
 canonifyurls = true
 
 [params]
-#  google_analytics_id = "XX-XXXXXXXX-X"
   twitter_username = "tallclair"
   author = "Tim Allclair"
