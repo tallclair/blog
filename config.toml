@@ -6,6 +6,8 @@ publishdir = "public"
 contentdir = "content"
 canonifyurls = true
 
-[params]
-  twitter_username = "tallclair"
-  author = "Tim Allclair"
+[social]
+twitter = "tallclair"
+github = "tallclair"
+stackoverflow = "1837431/tim-allclair"
+email = "timsstclair@gmail.com"

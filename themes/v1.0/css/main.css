@@ -8,6 +8,23 @@ hr.small {
     width: 8em;
 }
 
+.social-icons a {
+    color: #666;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+    vertical-align: middle;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+}
+
+.social-icons a:hover {
+    color: #333;
+}
+
 .avatar-container {
     left: 50%;
     position: absolute;

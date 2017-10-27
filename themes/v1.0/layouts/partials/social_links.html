@@ -1,4 +1,13 @@
-<a class="fa fa-rss rss" href="/index.xml"></a>
-{{ if isset .Site.Params "twitter_username" }}
-<a class="fa fa-twitter twitter" href="https://twitter.com/{{ .Site.Params.twitter_username }}"></a>
+<a href="/index.xml" aria-label="rss"><i class="fa fa-rss" aria-hidden="true"></i></a>
+{{ with .Site.Social.twitter }}
+<a href="https://twitter.com/{{.}}" aria-label="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Social.github }}
+<a href="https://github.com/{{.}}" aria-label="github"><i class="fa fa-github" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Social.stackoverflow }}
+<a href="https://stackoverflow.com/users/{{.}}" aria-label="stackoverflow"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+{{ end }}
+{{ with .Site.Social.email }}
+<a href="mailto:{{.}}" aria-label="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
 {{ end }}
