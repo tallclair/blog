@@ -40,11 +40,11 @@ hr.small {
 
 @media screen and (max-width: 48em) {
     .avatar-container {
-        top: 4em;
+        top: 4.5em;
     }
 
     .avatar-border {
-        width: 180px;
+        width: 158px;
     }
 }
 

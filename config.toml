@@ -1,4 +1,4 @@
-baseURL = "http://tallclair.netlify.com/" # FIXME
+baseURL = "http://tallclair.netlify.com" # FIXME
 languageCode = "en-us"
 title = "Tim Allclair's Blog"
 theme = "v1.0"

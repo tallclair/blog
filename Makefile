@@ -8,4 +8,7 @@ build:
 deploy:
 	netlify deploy -p public
 
-.PHONY: build deploy
+clean:
+	rm -r public
+
+.PHONY: build deploy clean
