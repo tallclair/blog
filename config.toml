@@ -6,6 +6,9 @@ publishdir = "public"
 contentdir = "content"
 canonifyurls = true
 
+[author]
+name = "Tim Allclair"
+
 [social]
 twitter = "tallclair"
 github = "tallclair"
