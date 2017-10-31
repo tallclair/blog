@@ -11,8 +11,10 @@ Aside from software engineering and computer security, I enjoy lots of hobbies i
 <hr class="small">
 
 <ul class="fa-ul">
-    <li><a href="https://github.com/tallclair" aria-label="github"><i class="fa fa-github" aria-hidden="true"></i> @tallclair</a>
-    <li><a href="https://twitter.com/tallclair" aria-label="twitter"><i class="fa fa-twitter" aria-hidden="true"></i> @tallclair</a>
-    <li><a href="https://stackoverflow.com/users/1837431/tim-allclair" aria-label="stackoverflow"><i class="fa fa-stack-overflow" aria-hidden="true"></i> stackoverflow</a>
-    <li><a href="mailto:timsstclair@gmail.com" aria-label="email"><i class="fa fa-envelope-o" aria-hidden="true"></i> timsstclair@gmail.com</a>
+    <li><a href="https://github.com/tallclair" aria-label="github"><i class="fa fa-fw fa-github" aria-hidden="true"></i> @tallclair</a>
+    <li><a href="https://twitter.com/tallclair" aria-label="twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i> @tallclair</a>
+    <li><a href="https://stackoverflow.com/users/1837431/tim-allclair" aria-label="stackoverflow"><i class="fa fa-fw fa-stack-overflow" aria-hidden="true"></i> stackoverflow</a>
+    <li><a href="mailto:timsstclair@gmail.com" aria-label="email"><i class="fa fa-fw fa-envelope-o" aria-hidden="true"></i> timsstclair@gmail.com</a>
+    <li><a href="/pubkey.asc"><i class="fa fa-fw fa-lock" aria-hidden="true"></i> PGP Key: [4096R/0x5E6F2E2DA760AF51]</a>
+
 </ul>
