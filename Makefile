@@ -19,5 +19,6 @@ clean:
 build-deps:
 	go get -u github.com/netlify/netlifyctl
 	go get -u github.com/gohugoio/hugo
+	go get -u github.com/tdewolff/minify/cmd/minify
 
 .PHONY: build deploy clean
