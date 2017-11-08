@@ -1,25 +1,29 @@
 {{ partial "head.html" . }}
 <div class="site-wrap">
-  <div class="post p2 p-responsive wrap" role="main">
-    <div class="measure">
-      <div class="post-header mb2">
-        <h1 class="py2">{{ .Title }}</h1>
-        <span class="post-meta">{{ .Date.Format "Jan 2, 2006" }} by {{ .Params.author }}</span><br>
-        {{ $baseurl := .Site.BaseURL }}
-      </div>
+    <div class="post p2 p-responsive wrap" role="main">
+        <div class="measure">
+            <div class="post-header mb2">
+                <p class="post-meta">{{ .Date.Format "Jan 2, 2006" }}</p>
+                <h1 class="post-title">{{ if .Draft }}[Draft]  {{end}}{{ .Title }}</h1>
+                {{ with .Params.Subtitle }}
+                <p class="post-subtitle">{{.}}</p>
+                {{ end }}
+                {{ $baseurl := .Site.BaseURL }}
+            </div>
 
-      <article class="post-content">
-      {{ .Content }}
-      </article>
+            <article class="post-content">
+                {{ .Content }}
+            </article>
 
-      <p class="post-meta">{{ i18n "tags" }}:&nbsp;
-        {{ range $i, $e := .Params.tags }}
-            {{if $i}},&nbsp;{{end}}
-            <a href="{{ $baseurl }}{{ $.Site.LanguagePrefix }}/tags/{{ . }}">{{ . }}</a>
-        {{ end }}
-      </p>
-
+            {{ with .Params.Tags }}
+            <p class="post-meta">Tags:&nbsp;
+                {{ range $i, $e := . }}
+                {{if $i}},&nbsp;{{end}}
+                <a href="{{ $baseurl }}{{ $.Site.LanguagePrefix }}/tags/{{ . }}">{{ . }}</a>
+                {{ end }}
+            </p>
+            {{ end }}
+        </div>
     </div>
-  </div>
 </div>
 {{ partial "footer.html" . }}
