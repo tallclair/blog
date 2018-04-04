@@ -5,6 +5,7 @@ theme = "v1.0"
 publishdir = "public"
 contentdir = "content"
 canonifyurls = true
+googleAnalytics = "UA-116938249-1"
 
 [author]
 name = "Tim Allclair"

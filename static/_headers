@@ -1,7 +1,7 @@
 /*
   # TODO: https://observatory.mozilla.org/analyze.html?host=tim.allclair.org recommendations
   # TODO: font-awesome hash
-  Content-Security-Policy: default-src 'self'; frame-ancestors 'none'; object-src 'none'; style-src 'self' https://fonts.googleapis.com https://maxcdn.bootstrapcdn.com; font-src https://fonts.gstatic.com https://maxcdn.bootstrapcdn.com
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-wc3iUhXSqusNi1IQlgp1oosa5XRu7kVnbmAxA0R2Tt0=' https://www.googletagmanager.com/gtag/js https://www.google-analytics.com/analytics.js; frame-ancestors 'none'; object-src 'none'; style-src 'self' https://fonts.googleapis.com https://maxcdn.bootstrapcdn.com; font-src https://fonts.gstatic.com https://maxcdn.bootstrapcdn.com; img-src 'self' https://www.google-analytics.com/
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
   X-XSS-Protection: 1; mode=block
