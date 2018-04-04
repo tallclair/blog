@@ -1,4 +1,4 @@
-baseURL = "https://tim.allclair.org" # FIXME
+baseURL = "/"
 languageCode = "en-us"
 title = "Tim Allclair"
 theme = "v1.0"
