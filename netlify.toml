@@ -8,12 +8,14 @@
 [context.deploy-preview]
   command = "make build-draft"
 
-[[headers]]
-  for = "/*" # This defines which paths this specific [[headers]] block will cover.
-[headers.values]
-  # TODO: https://observatory.mozilla.org/analyze.html?host=tim.allclair.org recommendations
-  # TODO: font-awesome hash
-  Content-Security-Policy = "default-src 'self'; frame-ancestors 'none'; object-src 'none'; style-src 'self' https://fonts.googleapis.com https://maxcdn.bootstrapcdn.com; font-src https://fonts.gstatic.com https://maxcdn.bootstrapcdn.com"
-  X-Frame-Options = "DENY"
-  X-Content-Type-Options = "nosniff"
-  X-XSS-Protection = "1; mode=block"
+# TODO: uncomment once netlifyctl supports headers, and delete static/_headers
+#       https://github.com/netlify/netlifyctl/issues/95
+# [[headers]]
+#   for = "/*" # This defines which paths this specific [[headers]] block will cover.
+# [headers.values]
+#   # TODO: https://observatory.mozilla.org/analyze.html?host=tim.allclair.org recommendations
+#   # TODO: font-awesome hash
+#   Content-Security-Policy = "default-src 'self'; frame-ancestors 'none'; object-src 'none'; style-src 'self' https://fonts.googleapis.com https://maxcdn.bootstrapcdn.com; font-src https://fonts.gstatic.com https://maxcdn.bootstrapcdn.com"
+#   X-Frame-Options = "DENY"
+#   X-Content-Type-Options = "nosniff"
+#   X-XSS-Protection = "1; mode=block"
