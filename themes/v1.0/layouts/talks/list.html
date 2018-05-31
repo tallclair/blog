@@ -1,0 +1,20 @@
+{{ partial "head.html" . }}
+<div class="site-wrap">
+    <div class="post p2 p-responsive wrap" role="main">
+        <div class="measure">
+            <div class="post-header mb2">
+                <h1 class="center">Talks</h1>
+                <hr class="small">
+            </div>
+
+            <div class="talks">
+                {{ range first 10 .Data.Pages.ByDate.Reverse }}
+                    {{ if eq .Type "talks" }}
+                        {{ .Render "summary"}}
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
+{{ partial "footer.html" . }}

@@ -9,4 +9,5 @@ css: static/style.css
 # Dependencies:
 #   go get github.com/tdewolff/minify/cmd/minify
 static/style.css: css/*.css
-	minify css/*.css > static/style.css
+#	minify css/*.css > static/style.css
+	cat css/*.css > static/style.css
