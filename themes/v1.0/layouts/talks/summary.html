@@ -1,0 +1,36 @@
+<div class="talk">
+    <div class="h3 talk-title">{{ if .Draft }}[Draft]  {{end}}{{ .Title }}
+        {{ with .Params.Subtitle }}
+        <span class="talk-subtitle">&nbsp;&nbsp;{{.}}</span>
+        {{ end }}
+    </div>
+    <div>
+        {{ with .Params.Image }}
+        <div class="talk-thumb"><img src="{{.}}" /></div>
+        {{ end }}
+        <p class="meta talk-meta">
+            {{ .Date.Format "Jan 2, 2006" }}
+            {{ with .Params.Venue }}
+    	      &nbsp;&middot;&nbsp;
+            {{.}}
+            {{ end }}
+            {{ with .Params.Cospeaker }}
+    	      &nbsp;&middot;&nbsp;
+            Co-presented with {{.}}
+            {{ end }}
+        </p>
+        <p class="meta talk-meta">
+            {{ with .Params.Recording }}
+            <a href="{{.}}" class="talk-resource">Recording</a>
+    	      &nbsp;&middot;&nbsp;
+            {{ end }}
+            {{ with .Params.Slides }}
+            <a href="{{.}}" class="talk-resource">Slides</a>
+            {{ end }}
+        </p>
+        <!-- <p class="post-summary">{{ .Summary }}</p> -->
+        <article class="talk-abstract">
+            {{ .Content }}
+        </article>
+    </div>
+</div>

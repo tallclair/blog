@@ -8,6 +8,12 @@
 [context.deploy-preview]
   command = "make build-draft"
 
+# TODO: remove this once there is main content
+[[redirects]]
+  from = "/"
+  to = "/about/"
+  status = "301"
+
 # TODO: uncomment once netlifyctl supports headers, and delete static/_headers
 #       https://github.com/netlify/netlifyctl/issues/95
 # [[headers]]
