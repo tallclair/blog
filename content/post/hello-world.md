@@ -10,10 +10,10 @@ jour. This blog needs some content! So, I'll create some content about protectin
 content. _Mmmmmmeta._
 
 <!--
-TODO: rewrite intro
+FIXME: rewrite intro
 -->
 
-## Threat model
+## Everything needs a threat model
 
 Since I believe in doing things **thoroughly**, let me start by laying out my [threat
 model][]. Perhaps I'll dedicate more posts to threat modeling in the future, but for now
@@ -21,28 +21,28 @@ I'll just try and answer the questions of "what am I trying to protect?", "what 
 against" and "who am I protecting against?" (or in security parlance, what are my assets, the
 threats to those assets and who are the threat actors?).
 
-The assets I'll discuss in this post are the blog content, the web servers hosting that content, and
-the domain name. If I was being *really* thorough (I'm not), I might also include the private
-serving certificate, development machine, my login credentials, my git backups, netlify's build
-machines, etc.
+The assets I'll discuss in this post are the blog content, my web host (Netlify), and the domain
+name. Since I'm treating Netlify as a black-box, assets such as the individual servers and the
+private serving certificate are out of scope for my threat model. I'm also excluding my development
+environment (and login credentials) from the threat model for now, since that would make this post
+way too long.
 
 A security model I find helpful is the [C.I.A. triad][cia-triad]. Not the Central Intelligence
 Agency, but rather Confidentiality, Integrity, and Availability. These are properties of a secure
 system, and a good framework for thinking about the threats against the blog assets.
 
 This blog is public, there is no secret content or user data, and no interfaces to external systems
-(except those secret keys and login credentials I said I wouldn't talk about). So I won't worry too
-much about confidentiality, although it will come up while discussing TLS
-([a.k.a. SSL][aka-ssl]). Integrity is a big one though, as I want to ensure my posts make it to
-readers as I intended. I like to think I'm warding off nation states trying to spread
-disinformation, but in reality I'm probably just mitigating against vandalism from script
-kiddies. But I'm getting ahead of myself: the last part is availability, and I don't want anyone to
-take down my blog - you should be able to read it at ALL HOURS (e.g. while waiting for your bank to
-stop being down for maintenance).
+(except those login credentials I said I wouldn't talk about). So I won't worry too much about
+confidentiality, although it will come up while discussing TLS ([a.k.a. SSL][aka-ssl]). Integrity is
+a big one though, as I want to ensure my posts make it to readers as I intended. I like to think I'm
+warding off nation states trying to spread disinformation, but in reality my biggest threats
+probably come from vandals and script kiddies. But I'm getting ahead of myself: the last part is
+availability, and I don't want anyone to take down my blog - you should be able to read it at ALL
+HOURS (e.g. while waiting for your bank to stop being down for maintenance).
 
-Finally, to answer who might want to attack this blog: script kiddies looking for some lolz, nation
-states interested in weakening the integrity of the internet and world, or anyone with a personal
-vendetta against me (of which I hope there are none!).
+Finally, to answer _who_ might want to attack this blog: script kiddies looking for some lolz,
+nation states interested in weakening the integrity of the internet and world, or anyone with a
+personal vendetta against me (of which I hope there are none!).
 
 ## Static content
 
