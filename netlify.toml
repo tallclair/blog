@@ -8,6 +8,13 @@
 [context.deploy-preview]
   command = "make build-draft"
 
+# FIXME: remove this temporary redirect when there is main content
+[[redirects]]
+  from = "/"
+  to = "/talks/"
+  status = 301
+  force = true
+
 # TODO: uncomment once netlifyctl supports headers, and delete static/_headers
 #       https://github.com/netlify/netlifyctl/issues/95
 # [[headers]]
