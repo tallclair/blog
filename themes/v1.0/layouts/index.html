@@ -1,4 +1,4 @@
-{{ partial "head.html" . }}
+{{ partialCached "head.html" . }}
 <div class="site-wrap">
     {{ if isset .Site.Params "description" }}
     <meta name="description" content="{{ .Site.Params.description }}">
@@ -30,4 +30,4 @@
         </div>
     </div>
 </div>
-{{ partial "footer.html" . }}
+{{ partialCached "footer.html" . }}
