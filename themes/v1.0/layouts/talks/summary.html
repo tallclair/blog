@@ -1,9 +1,10 @@
 <div class="talk">
-    <div class="h3 talk-title">{{ if .Draft }}[Draft]  {{end}}{{ .Title }}
+    <a href="{{ .Permalink }}"><div class="h3 talk-title">
+        {{ if .Draft }}[Draft]  {{end}}{{ .Title }}
         {{ with .Params.Subtitle }}
         <span class="talk-subtitle">&nbsp;&nbsp;{{.}}</span>
         {{ end }}
-    </div>
+    </div></a>
     <div>
         {{ with .Params.Image }}
         <div class="talk-thumb"><img src="{{.}}" /></div>
