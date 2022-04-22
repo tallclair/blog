@@ -5,7 +5,8 @@ date: 2018-05-04
 slides: https://static.sched.com/hosted_files/kccnceu18/96/Secure%20Pods%20-%20KubeCon%20EU%202018.pdf
 recording: https://youtu.be/GLwmJh-j3rs
 venue: KubeCon EU
-image: /img/talks/secure-pods.jpg
+images:
+- /images/talks/secure-pods.jpg
 ---
 
 What is a "secure pod"? What does it mean for a Kubernetes workload to have strong isolation? With

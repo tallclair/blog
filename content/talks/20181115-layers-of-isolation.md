@@ -4,7 +4,8 @@ date: 2018-11-15
 slides: https://static.sched.com/hosted_files/kccncchina2018english/3a/KubeCon%20Shanghai%20China%202018%20-%20Final.pdf
 recording: https://youtu.be/dM0lyNmt2L8
 venue: KubeCon China
-image: /img/talks/layers-of-isolation.png
+images:
+- /images/talks/layers-of-isolation.png
 ---
 
 How much isolation can you reasonably expect between two applications in the same cluster? Should

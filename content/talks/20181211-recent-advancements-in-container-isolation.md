@@ -5,7 +5,8 @@ slides: https://static.sched.com/hosted_files/kccna18/01/Kubecon%20Seattle%20-%2
 recording: https://youtu.be/E_jn2UiSWww
 venue: KubeCon NA
 cospeaker: Adin Scannell
-image: /img/talks/recent-advancements-in-container-iso.png
+images:
+- /images/talks/recent-advancements-in-container-iso.png
 ---
 
 Container orchestration enables higher bin-packing and utilization of machines, but native linux

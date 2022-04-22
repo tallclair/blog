@@ -2,6 +2,9 @@
 title: "About me"
 date: 2017-10-29
 layout: about
+profile_photo: &profile /images/avatar.jpg
+images:
+- *profile
 ---
 
 My name is **Tim Allclair** (né _St. Clair_). I am a software engineer at Google working on [Kubernetes](https://kubernetes.io/).

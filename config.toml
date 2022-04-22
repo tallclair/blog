@@ -25,3 +25,8 @@ email = "timsstclair@gmail.com"
 
 [markup.goldmark.renderer]
 unsafe= true
+
+[imaging]
+  hint = 'drawing'
+  quality = 85
+  resampleFilter = 'Lanczos'

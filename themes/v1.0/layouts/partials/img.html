@@ -1,0 +1,25 @@
+{{ $img := resources.Get .src }}
+{{ $width := default 1000 .width }}
+{{ $height := default 1000 .height }}
+{{ $opts := printf "%s webp" (default "" .opts) }}
+{{ $nosize := default false .nosize }}
+
+{{ $fit_lowres := printf "%dx%d %s" $width $height $opts }}
+{{ $img_lowres := $img.Fit $fit_lowres }}
+
+{{ $fit_hires := printf "%dx%d %s" (mul $width 2) (mul $height 2) $opts }}
+{{ $img_hires := $img.Fit $fit_hires }}
+
+<img
+    {{ if and .width (not $nosize) }}width="{{ $img_lowres.Width }}"{{ end }}
+    {{ if and .height (not $nosize) }}height="{{ $img_lowres.Height }}"{{ end }}
+    src="{{ $img_lowres.RelPermalink }}"
+    srcset="{{ $img_hires.RelPermalink }} 2x"
+    {{ with .alt }}
+        alt="{{.}}"
+    {{ else }}
+        {{ if .decorative }}alt=""{{ end }}
+    {{ end }}
+    {{ with .class }}class="{{.}}"{{ end }}
+    {{ if .lazy }}loading="lazy"{{ end }}
+>

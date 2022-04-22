@@ -6,7 +6,8 @@ slides: https://static.sched.com/hosted_files/kccncna19/0f/walls_within_walls_ca
 recording: https://youtu.be/6rMGRvcjvKc
 venue: KubeCon NA
 cospeaker: Greg Castle
-image: /img/talks/walls-within-walls.jpg
+images:
+- /images/talks/walls-within-walls.jpg
 ---
 
 What happens if an attacker escapes a container and compromises your node? Is it game over for the

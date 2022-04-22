@@ -3,11 +3,20 @@
     <div class="post p2 p-responsive wrap" role="main">
         <div class="measure">
             <div class="post-header mb2">
-                <div class="avatar-container">
-                    <div class="avatar-border">
-                        <img class="avatar-img" src="{{ "/img/avatar.jpg" | absURL }}">
+                {{ with .Params.profile_photo }}
+                    <div class="avatar-container">
+                        <div class="avatar-border">
+                            {{ partial "img" (dict
+                                "src" .
+                                "width" 220
+                                "height" 220
+                                "opts" "photo"
+                                "alt" "Profile photo"
+                                "class" "avatar-img"
+                            )}}
+                        </div>
                     </div>
-                </div>
+                {{ end }}
                 <div class="avatar-padding"></div>
                 <h1 class="center">{{ .Title }}</h1>
                 <hr class="small">
