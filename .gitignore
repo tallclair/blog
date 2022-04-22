@@ -1,3 +1,4 @@
 public
 .netlify
 .hugo_build.lock
+resources/_gen

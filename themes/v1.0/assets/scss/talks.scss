@@ -1,0 +1,42 @@
+
+.talk-thumb {
+    float: right;
+    padding: 0.5em;
+    width: 12em;
+}
+
+.talk-thumb img {
+    border: 1px solid #ccc;
+    border-radius: 16px;
+}
+
+.h3.talk-title {
+    color: #333;
+    margin-bottom: 0.2em;
+}
+
+.talk-title .talk-subtitle {
+    color: #7a7a7a;
+    font-size: 80%;
+    font-style: italic;
+}
+
+.meta.talk-meta {
+    width: auto;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+    color: #7a7a7a;
+    font-style: italic;
+}
+
+article.talk-abstract {
+    margin-top: 0.5rem;
+}
+
+article.talk-abstract p,
+article.talk-abstract a,
+article.talk-abstract li {
+    font-size: 1rem;
+    line-height: 1.4;
+}
