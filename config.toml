@@ -5,7 +5,7 @@ theme = "v1.0"
 publishdir = "public"
 contentdir = "content"
 canonifyurls = true
-googleAnalytics = "UA-116938249-1"
+googleAnalytics = "G-QX5GF5NDKN"
 
 [author]
 name = "Tim Allclair"
@@ -15,3 +15,13 @@ twitter = "tallclair"
 github = "tallclair"
 stackoverflow = "1837431/tim-allclair"
 email = "timsstclair@gmail.com"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+  section = ["HTML"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
+
+[markup.goldmark.renderer]
+unsafe= true

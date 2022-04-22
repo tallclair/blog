@@ -1,16 +1,16 @@
 build:
-	hugo
+	hugo --gc --minify --cleanDestinationDir
 
 build-draft:
 	hugo --buildDrafts
 
-deploy:
-	netlifyctl deploy
+deploy: build
+	netlify deploy --prod
+
+deploy-preview:
+	netlify deploy --draft
 
 preview:
-	netlifyctl deploy --draft
-
-preview-local:
 	hugo server
 
 clean:
